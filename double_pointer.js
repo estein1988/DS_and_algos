@@ -12,7 +12,7 @@ function sumZero1(array){
 console.log(sumZero1([-3, -2, -1, 0, 1, 2, 3]))
 
 /////////////////////////////////////////////////////////////////
-//o(n0)
+//o(n)
 function sumZero2(array){
     let left = 0;
     let right = array.length - 1;
