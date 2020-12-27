@@ -1,10 +1,11 @@
+//o(n^2)
 function maxSubArraySum1(array, n){
     if(n < array.length){
         return null;
     }
 
     let max = -Infinity;
-    for(let i = 0; i < array.length - n; i++){
+    for(let i = 0; i < array.length - n + 1; i++){
         temp = 0;
         for(let j = 0; j < n; j++){
             temp += array[i + j];

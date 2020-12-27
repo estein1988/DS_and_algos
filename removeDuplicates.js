@@ -9,3 +9,7 @@ function removeDuplicates(nums) {
     }
     return nums.length;
 };
+
+var removeDuplicates = function(nums) {
+    return nums.filter((value, index) => nums.indexOf(value) !== index)
+};

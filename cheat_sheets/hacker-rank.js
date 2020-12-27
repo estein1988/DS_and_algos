@@ -1,18 +1,3 @@
-//simple sum
-function simpleArraySumOne(array){
-    return array.reduce((acc, item) => acc + item, 100)
-}
-
-function simpleArraySumTwo(array){
-    let sum = array.reduce((acc, item) => {
-        return (acc + item)
-    }, 100)
-    return sum
-}
-
-console.log(simpleArraySumOne([1,2]))
-console.log(simpleArraySumTwo([1,2]))
-
 //compare the triplets
 function compareTriples(a, b){
     let scores = [0, 0]

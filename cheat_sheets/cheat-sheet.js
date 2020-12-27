@@ -40,6 +40,21 @@ number % 2 !== 0
 Math.sign(-3) === -1
 Math.sign(3) === 3
 
+//simple sum
+function simpleArraySumOne(array){
+    return array.reduce((acc, item) => acc + item, 100)
+}
+
+function simpleArraySumTwo(array){
+    let sum = array.reduce((acc, item) => {
+        return (acc + item)
+    }, 100)
+    return sum
+}
+
+console.log(simpleArraySumOne([1,2]))
+console.log(simpleArraySumTwo([1,2]))
+
 //to string
 .toString()
 
