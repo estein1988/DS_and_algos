@@ -18,7 +18,17 @@ function countUniqueValues(array){
     for(let int of array){
         integerMap[int] ? integerMap[int]++ : integerMap[int] = 1
     }
-    return Object.keys(integerMap)
+    return Object.keys(integerMap).length
+}
+
+function countUniqueValues(array){
+    let integerObj = {};
+    
+    for(let integer of array){
+        integerObj[integer] = integerObj[integer] + 1 || 1
+    }
+    
+    return Object.keys(integerObj).length
 }
 
 // console.log(countUniqueValues([1, 1, 1, 1, 1, 2]))
@@ -37,3 +47,4 @@ function countUniqueValues(array){
 }
 
 console.log(countUniqueValues([1, 1, 2, 2, 3, 3]))
+//[1,1,2,3,3,4,5,6,6,7] to // [1,2,3,4,5,6,7,6,6,7]
