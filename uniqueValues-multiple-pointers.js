@@ -14,14 +14,6 @@ function countUniqueValues(array){
 }
 
 function countUniqueValues(array){
-    let integerMap = {};
-    for(let int of array){
-        integerMap[int] ? integerMap[int]++ : integerMap[int] = 1
-    }
-    return Object.keys(integerMap).length
-}
-
-function countUniqueValues(array){
     let integerObj = {};
     
     for(let integer of array){

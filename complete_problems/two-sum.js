@@ -10,3 +10,14 @@ var twoSum = function(nums, target) {
     }
     return result;
 };
+
+function twoSum(nums, target){
+    let numberObj = {};
+    for(let i = 0; i < nums.length; i++){
+        let diff = target - nums[i];
+        if(diff in numberObj){
+            return [numberObj[diff], i]
+        }
+        numberObj[nums[i]]  = i;
+    }
+}

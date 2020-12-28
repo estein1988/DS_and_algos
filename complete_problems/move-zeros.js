@@ -14,3 +14,22 @@ function moveZeros(nums) {
 
 console.log(moveZeros([0,1,0,3,12]))
 
+function moveZeros(nums) {
+    let i = 0;
+    for(let j = 0; j<nums.length; j++){
+        if(nums[j] !== 0){
+            nums[i] = nums[j];
+            i++
+        }
+    }
+    for(let j = i; j<nums.length; j++){
+        nums[j] = 0
+    }
+    return nums
+};
+
+//placeNonZeros
+//[0,      0,     1,     0,    2,    0,    7,    0,      8]
+//^i
+
+//[1, 2, 7, 8, 0, 0, 0, 0]

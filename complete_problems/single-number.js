@@ -6,7 +6,7 @@ function singleNumber(nums) {
     }
     
     for(let integer in integerMap){
-        if(integerMap[integer] ===1){
+        if(integerMap[integer] === 1){
             return integer
         }
     }
