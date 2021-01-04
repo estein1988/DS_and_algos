@@ -28,8 +28,8 @@ function moveZeros(nums) {
     return nums
 };
 
-//placeNonZeros
+//i
 //[0,      0,     1,     0,    2,    0,    7,    0,      8]
-//^i
+//^j
 
 //[1, 2, 7, 8, 0, 0, 0, 0]
