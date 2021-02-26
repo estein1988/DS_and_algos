@@ -22,8 +22,8 @@ var missingNumber = function(nums) {
 
 var missingNumber = function(nums) {
     let n = nums.length;
-    let Sum = n * ((n+1) / 2);
-    for(let i=0;i<n;i++){
+    let Sum = n * ((n + 1) / 2);
+    for(let i = 0; i < n; i++){
         Sum = Sum - nums[i];
     }
     return Sum;
