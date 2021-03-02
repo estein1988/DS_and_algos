@@ -18,3 +18,6 @@ var calPoints = function(ops) {
     })
     return sum
 };
+
+console.log(calPoints(["5","2","C","D","+"]))
+console.log(calPoints(["5","-2","4","C","D","9","+","+"]))

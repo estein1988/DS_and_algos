@@ -8,8 +8,10 @@ var defangIPaddr = function(address) {
     return addressSplit.join('')
 };
 
+console.log(defangIPaddrAlt('1.1.1.1'))
+
 //alternate
-function defangIPaddr (address) { //"255.100.50.0"
+function defangIPaddrAlt (address) { //"255.100.50.0"
     let defanged = '';
     for (let i = 0; i < address.length; i++) {
         if(address[i] === '.') {
@@ -20,3 +22,5 @@ function defangIPaddr (address) { //"255.100.50.0"
     }
     return defanged;
 };
+
+console.log(defangIPaddrAlt('255.100.50.0'))

@@ -8,6 +8,9 @@ var isPrefixOfWord = function(sentence, searchWord) {
     return -1
 };
 
+sentence1 = "i love eating burger"
+searchWord1 = "burg"
+console.log(isPrefixOfWord(sentence1, searchWord1))
 
 //alternate
 var isPrefixOfWord = function(sentence, searchWord) {
