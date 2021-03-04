@@ -11,8 +11,12 @@ var findLucky = function(arr) {
             result.push(int)
         }
     }
-    let finalResult = +result.sort((a,b) => b-a)[0]
-    if (result.length === 0){
-        return -1
-    } else return finalResult
+    let finalResult = 0
+    result.length === 0 
+        ? finalResult = -1 
+        : finalResult = Math.max(...result)
+    return finalResult
 };
+
+console.log(findLucky[2,2,2,3,3])
+console.log(findLucky[1,2,2,3,3,3])

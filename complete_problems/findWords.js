@@ -16,9 +16,15 @@ function isGoodString(word, chars){
     return true
 }
 
+words1 = ["cat","bt","hat","tree"]; 
+chars1 = "atach";
+console.log(countCharacters(words1, chars1))
 
+words2 = ["hello","world","leetcode"];
+chars2 = "welldonehoneyr"
+console.log(countCharacters(words2, chars2))
 
-
+////////////////////////////////////////////////////////////////
 var countCharacters = function(words, chars) {
     let res = 0;
     for (let word of words) {

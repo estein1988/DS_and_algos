@@ -12,3 +12,22 @@ function firstUniqChar(str) {
     }
     return -1
 };
+
+console.log(firstUniqChar('leetcode')) //0
+console.log(firstUniqChar('loveleetcode')) //2
+
+/////////////////////////////////////////////
+var firstUniqCharAlt = function(s) {
+    let charMap = {};
+    
+    for(let char of s){
+        charMap[char] ? charMap[char]++ : charMap[char] = 1
+    }
+    
+    for(let char in charMap){
+        if(charMap[char] === 1){
+            return s.indexOf(char)
+        }
+    }
+    return -1
+};
