@@ -5,8 +5,12 @@ var maximum69Number  = function(num) {
             return parseInt(numStr.replace(numStr[i], "9"));
         }
     }
-    return num;
+    return +numString; //returning num also works?? doesn't make sense that returning the input num would work, because the replace isn't on that input?
 };
+
+console.log(maximum69Number(9669))
+console.log(maximum69Number(9996))
+console.log(maximum69Number(9999))
 
 //alternate
 var maximum69Number  = function(num) {

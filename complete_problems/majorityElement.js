@@ -17,6 +17,8 @@ var majorityElement = function(nums) {
     return +maxInt
 };
 
+console.log(majorityElement([2,2,1,1,1,2,2]))
+
 //alternate - O(n log n)
 var majorityElement = function(nums) {
     return nums.sort()[Math.floor(nums.sort().length / 2)]
